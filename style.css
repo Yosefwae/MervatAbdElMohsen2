@@ -1,0 +1,152 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #a3c4f3, #6b82b8); /* أزرق فاتح لدرجة وسط */
+  color: #1a3e72;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: #2c3e50;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li {
+  padding: 14px 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.navbar ul li a:hover {
+  color: #fff;
+  background-color: #00aaff;
+}
+
+header {
+  background: #3e4a61;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.name {
+  font-size: 32px;
+  font-family: 'Brush Script MT', cursive;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #2a52be;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 20px;
+  color: #003399;
+  padding: 0 30px;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .navbar ul {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  .navbar ul li {
+    display: inline-block;
+    padding: 14px 15px;
+  }
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.about-container p {
+  width: 50%;
+  font-size: 20px;
+  color: #003399;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Georgia', 'Cambria', serif;
+}
+
+.about-image {
+  width: 45%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-left: 20px; 
+}
+
+body, p, h1, h2, h3, h4, h5, h6, a {
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.section {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a3e72; 
+  font-size: 20px;
+}
+
+.section h2 {
+  text-align: center;
+  color: #1a3e72;
+}
